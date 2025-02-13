@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PlaceImage from "./components/PlaceImage";
 
 export default function Home() {
   return (
@@ -47,6 +48,12 @@ export default function Home() {
           >
             Read our docs
           </a>
+        </div>
+        <div>
+          This should be google Image Below 
+          <div>
+            <PlaceImage  address="Dr.Vigor 16460 Bake Pkwy Suite 800, Irvine, CA 9261"/> 
+          </div>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
