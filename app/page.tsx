@@ -1,5 +1,7 @@
 import Image from "next/image";
 import PlaceImage from "./components/PlaceImage";
+import Accordion from "./components/AccordionFades/AccordionFades";
+import CityStateZipAutocomplete from "./components/LocationSearchBar/LocationSearch";
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] h-screen">
           <li className="mb-2">
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
@@ -53,7 +55,22 @@ export default function Home() {
           This should be google Image Below 
           <div>
             <PlaceImage  address="Dr.Vigor 16460 Bake Pkwy Suite 800, Irvine, CA 9261"/> 
+            <div className="">
+              <Accordion />
+            </div>
+            <div className="">
+              <Accordion />
+            </div>
+            <div className="">
+              <Accordion />
+            </div>
           </div>
+          <div>
+            <CityStateZipAutocomplete />
+          </div>
+        </div>
+        <div className="h-screen">
+
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

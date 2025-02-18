@@ -19,3 +19,18 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Tailwind will handle most of the animations for us, no need for custom CSS */
+.accordion-content {
+  @apply opacity-0 transition-opacity duration-1000 ease-in-out;
+}
+
+.accordion-visible .accordion-content {
+  @apply opacity-100;
+}
+
+.Select__input input,
+.Select__single-value {
+  user-select: text !important; /* Use !important to override any existing styles */
+}
